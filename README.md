@@ -18,3 +18,8 @@ pmsNet和pmsFCN神经网络外观检测
 
 
 ![image](./pic/XVISION.png)
+
+
+
+
+项目解决方案支持： 请联系QQ_514704465
