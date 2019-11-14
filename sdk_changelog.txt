@@ -1,0 +1,152 @@
+
+=====================20190519=====================
+1. 增加了靶标调用API
+
+参考:
+demos/testComponents2.cpp
+
+/***
+component process
+
+@img,    input, image data
+@objs,   output object
+@edge_thres,  input, edge detect threshold
+@k1, input, dilate param
+@k2, input, erode param
+@label, input threshold
+*/
+extern void mvComponentsProcess(Mat& img, vector<mvCCLObject>& objs, int edge_thres = 100, int k1 = 0, int k2 = 0, int label_thres = 0);
+
+=====================20190520=====================
+1. 添加x86版本库
+
+=====================20190612=====================
+
+1. 增加直接圆检测功能
+参考:
+demos/testCirclesDet.cpp
+/***
+circles detection.
+@img,    input, image data
+@objs,   output ccl object
+@edge_thres,  input, edge detect threshold
+@accumulator, input, accumulator threshold for the circle centers at the detection stage.
+@min_radius, input, minimum circle radius. if 0, not use
+@max_radius, input, maximum circles radius. if 0, not use
+@kernel, input, image smooth kernal(3,5,7,9...)
+*/
+extern void mvCirclesDet(Mat& img, vector<mvCCLObject>& objs, int edge_thres = 100, int accu = 50,
+	int min_radius = 0, int max_radius = 0, int kernel = 3);
+
+=====================20190628=====================
+1. 模版粗定位优化
+参考:
+demos/testTemplateMatch_new.cpp
+
+	/*
+	@temp,   input, template image,  gray image
+	@dst,    input, detect image, gray image
+	@angle_range, input, angle range(+/-), default: 5
+	@angle_step,  input, angle step,  default: 0.2
+	@xy_range,    input, roation center offset range ,   default: 32
+	@matrix3x3,   ouput, the affine matrix2x3 in [hmat]
+	*/
+	
+	void refinePosition(Mat& temp, Mat& dst, int angle_range = 3, float angle_step = 0.2, int xy_range = 32);
+
+=====================20190713=====================
+1. 增加一维码、二维码识别定位功能
+参考:
+examples/testCodeRecog.cpp
+
+/*
+qr-code,bar-code recognition.
+@img     input, image to detect
+@objs    output, object
+
+reutrn
+*/
+extern void mvCodeRecognition(Mat& img, vector<symObj>& objs);	
+
+
+
+=====================20190909=====================
+1. 增加对象结果序列化流服务
+支持TCP/IP，RS232传输
+/*
+@res,    input, matchResult
+@pdata,  output, string or binary data
+@length, output, length size
+@mode,   input, binary:mode = 0, binary: mode = 1
+*/
+extern void mvResultStreamOutput(vector<matchResult>& re, String& pdata, int& length, int mode = 0);
+
+
+extern void mvTransMatchResult(mvResStream& sres, vector <matchResult> & mres_out);
+
+/***
+server send message
+ udp server ip: 127.0.0.1  port: 6090
+
+@pdata   send data buffer
+@lenght  data length
+*/
+int mvServerSendMsg(char *pdata, int length);
+
+
+=====================20191014=====================
+1. x64/x86速度优化OMP
+
+
+2. 解决多个加密狗冲突问题
+
+=====================20191021======================
+1. 增加和改善component检测算子
+
+/***
+component process
+
+@img,    input, image data
+@objs,   output object
+@edge_thres,  input, edge detect threshold
+@k1, input, dilate param
+@k2, input, erode param
+@label, input differrence threshold between the label image
+*/
+extern void mvComponentsProcess(Mat& img, vector<mvCCLObject>& objs, int edge_thres = 100, int k1 = 0, int k2 = 0, int label_thres = 0);
+
+
+/***
+component process, no roundness feature.
+
+@img,    input, image data
+@objs,   output object
+@edge_thres,  input, edge detect threshold
+@k1, input, dilate param
+@k2, input, erode param
+*/
+extern void mvComponentsProcess2(Mat& img, vector<mvCCLObject>& objs, int edge_thres = 100, int k1 = 0, int k2 = 0);
+
+extern void mvComponentDet(Mat& img, vector<mvCCLObject>& objs, detParam& param, int draw_flag);
+
+/***
+@img   input,  gray or color image
+component extract feature(gray, roundness)
+*/
+extern void mvCCLExtractFeatures(Mat img_gray, vector<mvCCLObject>& objs);
+
+
+参考:
+demos/testComponent2.cpp
+
+
+
+
+
+
+
+
+
+
+
+
