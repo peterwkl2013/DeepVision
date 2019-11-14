@@ -13,4 +13,4 @@ X-Vision具有以下功能:
 丰富的图象处理接口（上百个图像处理算子函数）
 
 
-![logo]/pic/xvision.png
+![logo](/pic/xvision.png)
