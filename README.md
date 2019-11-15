@@ -48,10 +48,14 @@ cd bin/
 
 pmsNet网络分割应用一:
 
-./testDL_SegNet_x64.exe
+./testDL_SegNet_dj_x64.exe
 
 ![image](./pic/dianjiao.png)
 
 
+pmsNet网络分割应用二:
 
+./testDL_SegNet_road_x64.exe
+
+![image](./pic/road.png)
 
