@@ -1,0 +1,524 @@
+xVision::starting mvlog ok.
+xVision::begin to load MV config file...
+xVision::load MV config file ok.
+xVision::load template image error.[./imvcfg/templ.bmp]
+xVision::alg instance init ok.
+2018-11-20 17:24:06 X-Vision::begin to load MV config file...
+2018-11-20 17:24:06 X-Vision::load MV config file ok.
+2018-11-20 17:24:06 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-11-20 17:24:06 X-Vision::alg instance init ok.
+2018-11-20 17:24:16 X-Vision::mvCalibration: calibration min-error:0.193812, total-error:0.278429
+2018-11-20 17:26:12 X-Vision::begin to load MV config file...
+2018-11-20 17:26:12 X-Vision::load MV config file ok.
+2018-11-20 17:26:12 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-11-20 17:26:12 X-Vision::alg instance init ok.
+2018-11-20 17:27:41 X-Vision::begin to load MV config file...
+2018-11-20 17:27:41 X-Vision::load MV config file ok.
+2018-11-20 17:27:41 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-11-20 17:27:41 X-Vision::alg instance init ok.
+2018-11-21 17:27:35 X-Vision::begin to load MV config file...
+2018-11-21 17:27:35 X-Vision::load MV config file ok.
+2018-11-21 17:27:35 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-11-21 17:27:35 X-Vision::alg instance init ok.
+2018-11-21 17:27:46 X-Vision::mvCalibration: calibration min-error:0.282863, total-error:0.512388
+2018-11-23 16:11:27 X-Vision::begin to load MV config file...
+2018-11-23 16:11:27 X-Vision::load MV config file ok.
+2018-11-23 16:11:27 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-11-23 16:11:27 X-Vision::alg instance init ok.
+2018-11-23 16:11:50 X-Vision::mvCalibration: calibration min-error:0.344704, total-error:0.821260
+2018-11-26 14:10:48 X-Vision::begin to load MV config file...
+2018-11-26 14:10:48 X-Vision::load MV config file ok.
+2018-11-26 14:10:48 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-11-26 14:10:48 X-Vision::can't find u-dog!
+2018-11-26 14:10:48 X-Vision::alg instance init ok.
+2018-11-28 11:40:29 X-Vision::begin to load MV config file...
+2018-11-28 11:40:29 X-Vision::load MV config file ok.
+2018-11-28 11:40:29 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-11-28 11:40:29 X-Vision::can't find u-dog!
+2018-11-28 11:40:29 X-Vision::alg instance init ok.
+2018-12-07 16:26:09 X-Vision::begin to load MV config file...
+2018-12-07 16:26:09 X-Vision::load MV config file ok.
+2018-12-07 16:26:09 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:26:09 X-Vision::can't find u-dog!
+2018-12-07 16:26:09 X-Vision::alg instance init ok.
+2018-12-07 16:26:14 X-Vision::begin to load MV config file...
+2018-12-07 16:26:14 X-Vision::load MV config file ok.
+2018-12-07 16:26:14 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:26:14 X-Vision::can't find u-dog!
+2018-12-07 16:26:14 X-Vision::alg instance init ok.
+2018-12-07 16:26:56 X-Vision::begin to load MV config file...
+2018-12-07 16:26:56 X-Vision::load MV config file ok.
+2018-12-07 16:26:56 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:26:56 X-Vision::can't find u-dog!
+2018-12-07 16:26:56 X-Vision::alg instance init ok.
+2018-12-07 16:28:23 X-Vision::begin to load MV config file...
+2018-12-07 16:28:23 X-Vision::load MV config file ok.
+2018-12-07 16:28:23 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:28:23 X-Vision::can't find u-dog!
+2018-12-07 16:28:23 X-Vision::alg instance init ok.
+2018-12-07 16:28:26 X-Vision::begin to load MV config file...
+2018-12-07 16:28:26 X-Vision::load MV config file ok.
+2018-12-07 16:28:26 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:28:26 X-Vision::can't find u-dog!
+2018-12-07 16:28:26 X-Vision::alg instance init ok.
+2018-12-07 16:29:24 X-Vision::begin to load MV config file...
+2018-12-07 16:29:24 X-Vision::load MV config file ok.
+2018-12-07 16:29:24 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:29:24 X-Vision::can't find u-dog!
+2018-12-07 16:29:24 X-Vision::alg instance init ok.
+2018-12-07 16:29:34 X-Vision::can't find u-dog!
+2018-12-07 16:29:44 X-Vision::can't find u-dog!
+2018-12-07 16:29:54 X-Vision::can't find u-dog!
+2018-12-07 16:30:01 X-Vision::begin to load MV config file...
+2018-12-07 16:30:01 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:30:01 X-Vision::load config file error!
+2018-12-07 16:30:01 X-Vision::pAlg init failed.
+2018-12-07 16:30:01 X-Vision::can't find u-dog!
+2018-12-07 16:30:13 X-Vision::begin to load MV config file...
+2018-12-07 16:30:13 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:30:13 X-Vision::load config file error!
+2018-12-07 16:30:13 X-Vision::pAlg init failed.
+2018-12-07 16:30:13 X-Vision::can't find u-dog!
+2018-12-07 16:31:57 X-Vision::begin to load MV config file...
+2018-12-07 16:31:57 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:31:57 X-Vision::load config file error!
+2018-12-07 16:31:57 X-Vision::pAlg init failed.
+2018-12-07 16:31:57 X-Vision::can't find u-dog!
+2018-12-07 16:32:08 X-Vision::begin to load MV config file...
+2018-12-07 16:32:08 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:32:08 X-Vision::load config file error!
+2018-12-07 16:32:08 X-Vision::pAlg init failed.
+2018-12-07 16:32:08 X-Vision::can't find u-dog!
+2018-12-07 16:32:18 X-Vision::can't find u-dog!
+2018-12-07 16:33:29 X-Vision::begin to load MV config file...
+2018-12-07 16:33:29 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:33:29 X-Vision::load config file error!
+2018-12-07 16:33:29 X-Vision::pAlg init failed.
+2018-12-07 16:33:29 X-Vision::can't find u-dog!
+2018-12-07 16:34:08 X-Vision::begin to load MV config file...
+2018-12-07 16:34:08 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:34:08 X-Vision::load config file error!
+2018-12-07 16:34:08 X-Vision::pAlg init failed.
+2018-12-07 16:34:08 X-Vision::can't find u-dog!
+2018-12-07 16:34:18 X-Vision::can't find u-dog!
+2018-12-07 16:34:28 X-Vision::can't find u-dog!
+2018-12-07 16:34:38 X-Vision::can't find u-dog!
+2018-12-07 16:34:48 X-Vision::can't find u-dog!
+2018-12-07 16:34:58 X-Vision::can't find u-dog!
+2018-12-07 16:35:08 X-Vision::can't find u-dog!
+2018-12-07 16:35:18 X-Vision::can't find u-dog!
+2018-12-07 16:35:28 X-Vision::can't find u-dog!
+2018-12-07 16:35:38 X-Vision::can't find u-dog!
+2018-12-07 16:35:48 X-Vision::can't find u-dog!
+2018-12-07 16:35:58 X-Vision::can't find u-dog!
+2018-12-07 16:36:29 X-Vision::begin to load MV config file...
+2018-12-07 16:36:29 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:36:29 X-Vision::load config file error!
+2018-12-07 16:36:29 X-Vision::pAlg init failed.
+2018-12-07 16:36:59 X-Vision::begin to load MV config file...
+2018-12-07 16:36:59 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:36:59 X-Vision::load config file error!
+2018-12-07 16:36:59 X-Vision::pAlg init failed.
+2018-12-07 16:37:22 X-Vision::begin to load MV config file...
+2018-12-07 16:37:22 X-Vision::config file crcCrack error:7121.
+2018-12-07 16:37:22 X-Vision::load config file error!
+2018-12-07 16:37:22 X-Vision::pAlg init failed.
+2018-12-07 16:37:49 X-Vision::begin to load MV config file...
+2018-12-07 16:37:49 X-Vision::load MV config file ok.
+2018-12-07 16:37:49 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:37:49 X-Vision::alg instance init ok.
+2018-12-07 16:38:13 X-Vision::begin to load MV config file...
+2018-12-07 16:38:13 X-Vision::load MV config file ok.
+2018-12-07 16:38:13 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:38:13 X-Vision::alg instance init ok.
+2018-12-07 16:39:23 X-Vision::begin to load MV config file...
+2018-12-07 16:39:23 X-Vision::load MV config file ok.
+2018-12-07 16:39:23 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 16:39:23 X-Vision::alg instance init ok.
+2018-12-07 16:39:33 X-Vision::can't read u-dog lic!
+2018-12-07 16:39:43 X-Vision::can't find u-dog!
+2018-12-07 16:39:53 X-Vision::can't find u-dog!
+2018-12-07 16:40:03 X-Vision::can't find u-dog!
+2018-12-07 16:40:13 X-Vision::can't find u-dog!
+2018-12-07 17:26:00 X-Vision::begin to load MV config file...
+2018-12-07 17:26:00 X-Vision::load MV config file ok.
+2018-12-07 17:26:00 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-07 17:26:00 X-Vision::can't find u-dog!
+2018-12-07 17:26:00 X-Vision::alg instance init ok.
+2018-12-07 17:26:02 X-Vision::begin to load MV config file...
+2018-12-07 17:26:02 X-Vision::config file crcCrack error:7121.
+2018-12-07 17:26:02 X-Vision::load config file error!
+2018-12-07 17:26:02 X-Vision::pAlg init failed.
+2018-12-07 17:26:02 X-Vision::can't find u-dog!
+2018-12-07 17:26:10 X-Vision::can't find u-dog!
+2018-12-07 17:26:12 X-Vision::can't find u-dog!
+2018-12-07 17:26:19 X-Vision::begin to load MV config file...
+2018-12-07 17:26:19 X-Vision::config file crcCrack error:7121.
+2018-12-07 17:26:19 X-Vision::load config file error!
+2018-12-07 17:26:19 X-Vision::pAlg init failed.
+2018-12-07 17:26:19 X-Vision::can't find u-dog!
+2018-12-07 17:26:26 X-Vision::begin to load MV config file...
+2018-12-07 17:26:26 X-Vision::config file crcCrack error:7121.
+2018-12-07 17:26:26 X-Vision::load config file error!
+2018-12-07 17:26:26 X-Vision::pAlg init failed.
+2018-12-07 17:26:26 X-Vision::can't find u-dog!
+2018-12-07 17:27:14 X-Vision::begin to load MV config file...
+2018-12-07 17:27:14 X-Vision::config file crcCrack error:7121.
+2018-12-07 17:27:14 X-Vision::load config file error!
+2018-12-07 17:27:14 X-Vision::pAlg init failed.
+2018-12-07 17:27:14 X-Vision::can't find u-dog!
+2018-12-07 17:27:40 X-Vision::begin to load MV config file...
+2018-12-07 17:27:40 X-Vision::config file crcCrack error:7121.
+2018-12-07 17:27:40 X-Vision::load config file error!
+2018-12-07 17:27:40 X-Vision::pAlg init failed.
+2018-12-07 17:27:40 X-Vision::can't find u-dog!
+2018-12-07 17:28:17 X-Vision::begin to load MV config file...
+2018-12-07 17:28:17 X-Vision::config file crcCrack error:7121.
+2018-12-07 17:28:17 X-Vision::load config file error!
+2018-12-07 17:28:17 X-Vision::pAlg init failed.
+2018-12-07 17:28:17 X-Vision::can't find u-dog!
+2018-12-07 17:28:29 X-Vision::begin to load MV config file...
+2018-12-07 17:28:29 X-Vision::config file crcCrack error:7121.
+2018-12-07 17:28:29 X-Vision::load config file error!
+2018-12-07 17:28:29 X-Vision::pAlg init failed.
+2018-12-07 17:28:29 X-Vision::can't find u-dog!
+2018-12-11 16:46:26 X-Vision::begin to load MV config file...
+2018-12-11 16:46:26 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:46:26 X-Vision::load config file error!
+2018-12-11 16:46:26 X-Vision::pAlg init failed.
+2018-12-11 16:46:26 X-Vision::can't find u-dog!
+2018-12-11 16:46:36 X-Vision::can't find u-dog!
+2018-12-11 16:46:46 X-Vision::can't find u-dog!
+2018-12-11 16:48:58 X-Vision::begin to load MV config file...
+2018-12-11 16:48:58 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:48:58 X-Vision::load config file error!
+2018-12-11 16:48:58 X-Vision::pAlg init failed.
+2018-12-11 16:49:09 X-Vision::begin to load MV config file...
+2018-12-11 16:49:09 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:49:09 X-Vision::load config file error!
+2018-12-11 16:49:09 X-Vision::pAlg init failed.
+2018-12-11 16:50:01 X-Vision::begin to load MV config file...
+2018-12-11 16:50:01 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:50:01 X-Vision::load config file error!
+2018-12-11 16:50:01 X-Vision::pAlg init failed.
+2018-12-11 16:50:08 X-Vision::begin to load MV config file...
+2018-12-11 16:50:08 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:50:08 X-Vision::load config file error!
+2018-12-11 16:50:08 X-Vision::pAlg init failed.
+2018-12-11 16:50:20 X-Vision::begin to load MV config file...
+2018-12-11 16:50:20 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:50:20 X-Vision::load config file error!
+2018-12-11 16:50:20 X-Vision::pAlg init failed.
+2018-12-11 16:52:29 X-Vision::begin to load MV config file...
+2018-12-11 16:52:29 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:52:29 X-Vision::load config file error!
+2018-12-11 16:52:29 X-Vision::pAlg init failed.
+2018-12-11 16:52:38 X-Vision::begin to load MV config file...
+2018-12-11 16:52:38 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:52:38 X-Vision::load config file error!
+2018-12-11 16:52:38 X-Vision::pAlg init failed.
+2018-12-11 16:52:48 X-Vision::begin to load MV config file...
+2018-12-11 16:52:48 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:52:48 X-Vision::load config file error!
+2018-12-11 16:52:48 X-Vision::pAlg init failed.
+2018-12-11 16:52:52 X-Vision::begin to load MV config file...
+2018-12-11 16:52:52 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:52:52 X-Vision::load config file error!
+2018-12-11 16:52:52 X-Vision::pAlg init failed.
+2018-12-11 16:56:07 X-Vision::begin to load MV config file...
+2018-12-11 16:56:07 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:56:07 X-Vision::load config file error!
+2018-12-11 16:56:07 X-Vision::pAlg init failed.
+2018-12-11 16:56:16 X-Vision::begin to load MV config file...
+2018-12-11 16:56:16 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:56:16 X-Vision::load config file error!
+2018-12-11 16:56:16 X-Vision::pAlg init failed.
+2018-12-11 16:56:52 X-Vision::begin to load MV config file...
+2018-12-11 16:56:52 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:56:52 X-Vision::load config file error!
+2018-12-11 16:56:52 X-Vision::pAlg init failed.
+2018-12-11 16:57:04 X-Vision::begin to load MV config file...
+2018-12-11 16:57:04 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:57:04 X-Vision::load config file error!
+2018-12-11 16:57:04 X-Vision::pAlg init failed.
+2018-12-11 16:58:08 X-Vision::begin to load MV config file...
+2018-12-11 16:58:08 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:58:08 X-Vision::load config file error!
+2018-12-11 16:58:08 X-Vision::pAlg init failed.
+2018-12-11 16:58:18 X-Vision::begin to load MV config file...
+2018-12-11 16:58:18 X-Vision::config file crcCrack error:7121.
+2018-12-11 16:58:18 X-Vision::load config file error!
+2018-12-11 16:58:18 X-Vision::pAlg init failed.
+2018-12-11 17:01:15 X-Vision::begin to load MV config file...
+2018-12-11 17:01:15 X-Vision::config file crcCrack error:7121.
+2018-12-11 17:01:15 X-Vision::load config file error!
+2018-12-11 17:01:15 X-Vision::pAlg init failed.
+2018-12-11 17:03:23 X-Vision::begin to load MV config file...
+2018-12-11 17:03:23 X-Vision::config file crcCrack error:7121.
+2018-12-11 17:03:23 X-Vision::load config file error!
+2018-12-11 17:03:23 X-Vision::pAlg init failed.
+2018-12-11 17:03:46 X-Vision::begin to load MV config file...
+2018-12-11 17:03:46 X-Vision::load MV config file ok.
+2018-12-11 17:03:46 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-11 17:03:46 X-Vision::alg instance init ok.
+2018-12-11 17:05:09 X-Vision::begin to load MV config file...
+2018-12-11 17:05:09 X-Vision::load MV config file ok.
+2018-12-11 17:05:09 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-11 17:05:09 X-Vision::alg instance init ok.
+2018-12-13 14:58:38 X-Vision::begin to load MV config file...
+2018-12-13 14:58:38 X-Vision::load MV config file ok.
+2018-12-13 14:58:38 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 14:58:38 X-Vision::alg instance init ok.
+2018-12-13 15:02:21 X-Vision::begin to load MV config file...
+2018-12-13 15:02:21 X-Vision::load MV config file ok.
+2018-12-13 15:02:21 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:02:21 X-Vision::alg instance init ok.
+2018-12-13 15:05:17 X-Vision::begin to load MV config file...
+2018-12-13 15:05:17 X-Vision::load MV config file ok.
+2018-12-13 15:05:17 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:05:17 X-Vision::alg instance init ok.
+2018-12-13 15:05:50 X-Vision::begin to load MV config file...
+2018-12-13 15:05:50 X-Vision::load MV config file ok.
+2018-12-13 15:05:50 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:05:50 X-Vision::alg instance init ok.
+2018-12-13 15:07:45 X-Vision::begin to load MV config file...
+2018-12-13 15:07:45 X-Vision::load MV config file ok.
+2018-12-13 15:07:45 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:07:45 X-Vision::alg instance init ok.
+2018-12-13 15:08:11 X-Vision::begin to load MV config file...
+2018-12-13 15:08:11 X-Vision::load MV config file ok.
+2018-12-13 15:08:11 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:08:11 X-Vision::alg instance init ok.
+2018-12-13 15:16:48 X-Vision::begin to load MV config file...
+2018-12-13 15:16:48 X-Vision::load MV config file ok.
+2018-12-13 15:16:48 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:16:48 X-Vision::alg instance init ok.
+2018-12-13 15:17:18 X-Vision::begin to load MV config file...
+2018-12-13 15:17:18 X-Vision::load MV config file ok.
+2018-12-13 15:17:18 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:17:18 X-Vision::alg instance init ok.
+2018-12-13 15:17:56 X-Vision::begin to load MV config file...
+2018-12-13 15:17:56 X-Vision::load MV config file ok.
+2018-12-13 15:17:56 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:17:56 X-Vision::alg instance init ok.
+2018-12-13 15:25:09 X-Vision::begin to load MV config file...
+2018-12-13 15:25:09 X-Vision::load MV config file ok.
+2018-12-13 15:25:09 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:25:09 X-Vision::alg instance init ok.
+2018-12-13 15:25:13 X-Vision::begin to load MV config file...
+2018-12-13 15:25:13 X-Vision::load MV config file ok.
+2018-12-13 15:25:13 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:25:13 X-Vision::alg instance init ok.
+2018-12-13 15:29:08 X-Vision::begin to load MV config file...
+2018-12-13 15:29:08 X-Vision::load MV config file ok.
+2018-12-13 15:29:08 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:29:08 X-Vision::alg instance init ok.
+2018-12-13 15:29:40 X-Vision::begin to load MV config file...
+2018-12-13 15:29:40 X-Vision::load MV config file ok.
+2018-12-13 15:29:40 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:29:40 X-Vision::alg instance init ok.
+2018-12-13 15:30:00 X-Vision::begin to load MV config file...
+2018-12-13 15:30:00 X-Vision::load MV config file ok.
+2018-12-13 15:30:00 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:30:00 X-Vision::alg instance init ok.
+2018-12-13 15:30:05 X-Vision::begin to load MV config file...
+2018-12-13 15:30:05 X-Vision::load MV config file ok.
+2018-12-13 15:30:05 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:30:05 X-Vision::alg instance init ok.
+2018-12-13 15:30:10 X-Vision::begin to load MV config file...
+2018-12-13 15:30:10 X-Vision::load MV config file ok.
+2018-12-13 15:30:10 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:30:10 X-Vision::alg instance init ok.
+2018-12-13 15:33:12 X-Vision::begin to load MV config file...
+2018-12-13 15:33:12 X-Vision::load MV config file ok.
+2018-12-13 15:33:12 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:33:12 X-Vision::alg instance init ok.
+2018-12-13 15:34:50 X-Vision::begin to load MV config file...
+2018-12-13 15:34:50 X-Vision::load MV config file ok.
+2018-12-13 15:34:50 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:34:50 X-Vision::alg instance init ok.
+2018-12-13 15:34:56 X-Vision::begin to load MV config file...
+2018-12-13 15:34:56 X-Vision::load MV config file ok.
+2018-12-13 15:34:56 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:34:56 X-Vision::alg instance init ok.
+2018-12-13 15:37:28 X-Vision::begin to load MV config file...
+2018-12-13 15:37:28 X-Vision::load MV config file ok.
+2018-12-13 15:37:28 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:37:28 X-Vision::alg instance init ok.
+2018-12-13 15:37:33 X-Vision::begin to load MV config file...
+2018-12-13 15:37:33 X-Vision::load MV config file ok.
+2018-12-13 15:37:33 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:37:33 X-Vision::alg instance init ok.
+2018-12-13 15:37:41 X-Vision::begin to load MV config file...
+2018-12-13 15:37:41 X-Vision::load MV config file ok.
+2018-12-13 15:37:41 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:37:41 X-Vision::alg instance init ok.
+2018-12-13 15:38:05 X-Vision::begin to load MV config file...
+2018-12-13 15:38:05 X-Vision::load MV config file ok.
+2018-12-13 15:38:05 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-13 15:38:05 X-Vision::alg instance init ok.
+2018-12-19 11:46:30 X-Vision::begin to load MV config file...
+2018-12-19 11:46:30 X-Vision::load MV config file ok.
+2018-12-19 11:46:30 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-19 11:46:30 X-Vision::alg instance init ok.
+2018-12-19 11:51:46 X-Vision::begin to load MV config file...
+2018-12-19 11:51:46 X-Vision::load MV config file ok.
+2018-12-19 11:51:46 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2018-12-19 11:51:46 X-Vision::alg instance init ok.
+2019-02-20 14:48:16 X-Vision::begin to load MV config file...
+2019-02-20 14:48:16 X-Vision::load MV config file ok.
+2019-02-20 14:48:16 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-02-20 14:48:16 X-Vision::can't find u-dog!
+2019-02-20 14:48:16 X-Vision::alg instance init ok.
+2019-02-20 14:48:22 X-Vision::begin to load MV config file...
+2019-02-20 14:48:22 X-Vision::load MV config file ok.
+2019-02-20 14:48:22 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-02-20 14:48:22 X-Vision::can't find u-dog!
+2019-02-20 14:48:22 X-Vision::alg instance init ok.
+2019-02-20 14:53:33 X-Vision::begin to load MV config file...
+2019-02-20 14:53:33 X-Vision::load MV config file ok.
+2019-02-20 14:53:33 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-02-20 14:53:33 X-Vision::can't find u-dog!
+2019-02-20 14:53:33 X-Vision::alg instance init ok.
+2019-02-20 14:53:43 X-Vision::can't find u-dog!
+2019-02-20 14:53:53 X-Vision::can't find u-dog!
+2019-02-20 14:54:03 X-Vision::can't find u-dog!
+2019-02-20 14:54:13 X-Vision::can't find u-dog!
+2019-02-20 14:54:23 X-Vision::can't find u-dog!
+2019-02-20 14:54:33 X-Vision::can't find u-dog!
+2019-02-20 14:54:43 X-Vision::can't find u-dog!
+2019-02-20 14:54:53 X-Vision::can't find u-dog!
+2019-02-20 14:55:03 X-Vision::can't find u-dog!
+2019-02-20 14:55:13 X-Vision::can't find u-dog!
+2019-02-20 14:55:23 X-Vision::can't find u-dog!
+2019-02-20 14:55:33 X-Vision::can't find u-dog!
+2019-02-20 14:55:43 X-Vision::can't find u-dog!
+2019-02-20 14:55:53 X-Vision::can't find u-dog!
+2019-02-20 14:56:03 X-Vision::can't find u-dog!
+2019-02-20 14:56:13 X-Vision::can't find u-dog!
+2019-02-20 14:56:23 X-Vision::can't find u-dog!
+2019-02-20 14:56:33 X-Vision::can't find u-dog!
+2019-02-20 14:56:43 X-Vision::can't find u-dog!
+2019-02-20 14:56:53 X-Vision::can't find u-dog!
+2019-02-20 16:25:48 X-Vision::begin to load MV config file...
+2019-02-20 16:25:48 X-Vision::load MV config file ok.
+2019-02-20 16:25:48 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-02-20 16:25:48 X-Vision::can't find u-dog!
+2019-02-20 16:25:48 X-Vision::alg instance init ok.
+2019-02-25 16:58:13 X-Vision::begin to load MV config file...
+2019-02-25 16:58:13 X-Vision::load MV config file ok.
+2019-02-25 16:58:13 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-02-25 16:58:13 X-Vision::alg instance init ok.
+2019-04-24 10:17:24 X-Vision::begin to load MV config file...
+2019-04-24 10:17:24 X-Vision::load MV config file ok.
+2019-04-24 10:17:24 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-04-24 10:17:24 X-Vision::alg instance init ok.
+2019-04-24 10:17:28 X-Vision::begin to load MV config file...
+2019-04-24 10:17:28 X-Vision::load MV config file ok.
+2019-04-24 10:17:28 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-04-24 10:17:28 X-Vision::alg instance init ok.
+2019-04-24 10:17:40 X-Vision::begin to load MV config file...
+2019-04-24 10:17:40 X-Vision::load MV config file ok.
+2019-04-24 10:17:40 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-04-24 10:17:40 X-Vision::alg instance init ok.
+2019-05-07 15:52:13 X-Vision::begin to load MV config file...
+2019-05-07 15:52:13 X-Vision::load MV config file ok.
+2019-05-07 15:52:13 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-05-07 15:52:13 X-Vision::alg instance init ok.
+2019-05-07 15:52:20 X-Vision::mvHeapMnotor not find symbols!!!
+2019-05-07 15:52:20 X-Vision::mvHeapMnotor not find symbols!!!
+2019-05-07 15:52:20 X-Vision::mvHeapMnotor not find symbols!!!
+2019-05-07 15:52:24 X-Vision::begin to load MV config file...
+2019-05-07 15:52:24 X-Vision::load MV config file ok.
+2019-05-07 15:52:24 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-05-07 15:52:24 X-Vision::alg instance init ok.
+2019-05-07 15:55:56 X-Vision::begin to load MV config file...
+2019-05-07 15:55:56 X-Vision::load MV config file ok.
+2019-05-07 15:55:56 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-05-07 15:55:56 X-Vision::alg instance init ok.
+2019-05-07 15:57:49 X-Vision::begin to load MV config file...
+2019-05-07 15:57:49 X-Vision::load MV config file ok.
+2019-05-07 15:57:49 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-05-07 15:57:49 X-Vision::alg instance init ok.
+2019-05-19 13:52:24 X-Vision::begin to load MV config file...
+2019-05-19 13:52:24 X-Vision::load MV config file ok.
+2019-05-19 13:52:24 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-05-19 13:52:24 X-Vision::alg instance init ok.
+2019-05-22 15:12:44 X-Vision::begin to load MV config file...
+2019-05-22 15:12:44 X-Vision::load MV config file ok.
+2019-05-22 15:12:44 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-05-22 15:12:44 X-Vision::alg instance init ok.
+2019-05-22 15:12:57 X-Vision::begin to load MV config file...
+2019-05-22 15:12:57 X-Vision::load MV config file ok.
+2019-05-22 15:12:57 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-05-22 15:12:57 X-Vision::alg instance init ok.
+2019-11-14 09:31:55 X-Vision::begin to load MV config file...
+2019-11-14 09:31:55 X-Vision::load MV config file ok.
+2019-11-14 09:31:55 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:31:55 X-Vision::alg instance init ok.
+2019-11-14 09:32:45 X-Vision::begin to load MV config file...
+2019-11-14 09:32:45 X-Vision::load MV config file ok.
+2019-11-14 09:32:45 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:32:45 X-Vision::alg instance init ok.
+2019-11-14 09:34:38 X-Vision::begin to load MV config file...
+2019-11-14 09:34:38 X-Vision::load MV config file ok.
+2019-11-14 09:34:38 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:34:38 X-Vision::alg instance init ok.
+2019-11-14 09:40:21 X-Vision::begin to load MV config file...
+2019-11-14 09:40:21 X-Vision::load MV config file ok.
+2019-11-14 09:40:21 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:40:21 X-Vision::alg instance init ok.
+2019-11-14 09:40:54 X-Vision::begin to load MV config file...
+2019-11-14 09:40:54 X-Vision::load MV config file ok.
+2019-11-14 09:40:54 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:40:54 X-Vision::alg instance init ok.
+2019-11-14 09:44:27 X-Vision::begin to load MV config file...
+2019-11-14 09:44:27 X-Vision::load MV config file ok.
+2019-11-14 09:44:27 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:44:27 X-Vision::alg instance init ok.
+2019-11-14 09:50:12 X-Vision::begin to load MV config file...
+2019-11-14 09:50:12 X-Vision::load MV config file ok.
+2019-11-14 09:50:12 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:50:12 X-Vision::alg instance init ok.
+2019-11-14 09:53:43 X-Vision::begin to load MV config file...
+2019-11-14 09:53:43 X-Vision::load MV config file ok.
+2019-11-14 09:53:43 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:53:43 X-Vision::alg instance init ok.
+2019-11-14 09:54:59 X-Vision::begin to load MV config file...
+2019-11-14 09:54:59 X-Vision::load MV config file ok.
+2019-11-14 09:54:59 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:54:59 X-Vision::alg instance init ok.
+2019-11-14 09:55:56 X-Vision::begin to load MV config file...
+2019-11-14 09:55:56 X-Vision::load MV config file ok.
+2019-11-14 09:55:56 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:55:56 X-Vision::alg instance init ok.
+2019-11-14 09:57:20 X-Vision::begin to load MV config file...
+2019-11-14 09:57:20 X-Vision::load MV config file ok.
+2019-11-14 09:57:20 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:57:20 X-Vision::alg instance init ok.
+2019-11-14 09:58:02 X-Vision::begin to load MV config file...
+2019-11-14 09:58:02 X-Vision::load MV config file ok.
+2019-11-14 09:58:02 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:58:02 X-Vision::alg instance init ok.
+2019-11-14 09:58:27 X-Vision::begin to load MV config file...
+2019-11-14 09:58:27 X-Vision::load MV config file ok.
+2019-11-14 09:58:27 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 09:58:27 X-Vision::alg instance init ok.
+2019-11-14 10:02:21 X-Vision::begin to load MV config file...
+2019-11-14 10:02:21 X-Vision::load MV config file ok.
+2019-11-14 10:02:21 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 10:02:21 X-Vision::alg instance init ok.
+2019-11-14 10:03:05 X-Vision::begin to load MV config file...
+2019-11-14 10:03:05 X-Vision::load MV config file ok.
+2019-11-14 10:03:05 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 10:03:05 X-Vision::alg instance init ok.
+2019-11-14 10:03:44 X-Vision::begin to load MV config file...
+2019-11-14 10:03:44 X-Vision::load MV config file ok.
+2019-11-14 10:03:44 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 10:03:44 X-Vision::alg instance init ok.
+2019-11-14 10:04:32 X-Vision::begin to load MV config file...
+2019-11-14 10:04:32 X-Vision::load MV config file ok.
+2019-11-14 10:04:32 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-11-14 10:04:32 X-Vision::alg instance init ok.
+2019-11-14 10:09:23 X-Vision::load USB DLL error!
+2019-11-14 10:09:23 X-Vision::can't load dog dll!

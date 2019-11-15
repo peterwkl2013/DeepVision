@@ -1,0 +1,189 @@
+################################### xVision algorithm param  settings###################################
+################################
+############################
+########################
+###################
+algType=MV_ALG_COMPONENT_DET1
+#edge threshold
+edge_thres=80
+useSmooth=1
+conf_thres=0.1
+use_tracker=0
+#alg parameters#
+#use filter
+use_filter=0
+#minimal object pixels
+min_pixels=0
+#maxmal object pixels，if = -1,not use
+max_pixels=50000
+#diff val, default: 50
+diff_val=50
+#minimal area of object 
+min_area=32
+#maxmal area, if = -1,not use
+max_area=-1
+#minimal gray value
+min_gray=-1
+#maxmal gray value
+max_gray=-1
+#min_wh_rate: min(w,h)/max(w,h)
+min_wh_rate=0
+#max_wh_rate
+max_wh_rate=0
+#ppa edge-pixels/area
+ppa=0
+gr_thres=0
+co_thres=0
+conLikeness=0
+#remove edge flag
+edge_flag=0
+#use classifier
+use_clasfier=0
+#use mapper
+use_mapper=0
+#smooth factor
+use_deepl=0
+#binary  
+useOtsu=1
+#use smooth=1
+useSmooth=1
+#use binary,bin metho: 1,2,3,4
+useBin=4
+#disp_level=3281073
+##############################
+algType=MV_ALG_COMPONENT_DET2
+#image binary metho: 
+edge_thres=100
+#1(binLow<= thres<  &&  thres <= binHigh)
+#2(binLow>= thres ||  thres >= binHigh)
+#3(xor)
+#4(adaptive binaray image)
+useBin=1
+binHigh=255
+binLow=110
+#smoot image
+useSmooth=1
+#disp_level=3281073
+##############################
+algType=MV_ALG_IMAGE_QULITY_EVAL
+#边缘敏感系数, 越小对边缘越敏感，噪声也越大
+edge_thres = 60
+#min_pixels < 0 ，表示最大轮廓， 0，表示不过滤， 
+#min_pixels > 0，表示过滤 边缘点 < min_pixels的目标
+min_pixels=-1
+#disp_level=2097152
+##############################
+algType=MV_ALG_FOCUS_EVAL
+conf_thres=0.4
+use_filter=0
+min_pixels=5
+edge_thres=80
+#disp_level=2097152
+##############################
+algType=MV_ALG_DARKNET_PROCESS
+conf_thres=0.4
+disp_level=3281073
+##############################
+#algorithm type
+algType=MV_ALG_DEFECTSDET
+#smooth image
+useSmooth=0
+#points icp metho algorithm metho: 0,1, 2...， default: 0
+sub_metho=0
+#object filter, default: 0
+use_filter=0
+#edge detect metho, default: 80
+#边缘敏感系数
+edge_thres=80
+#detected object pixels, default: 16
+min_pixels=0
+#mean-area
+min_area=3
+#contour metho(0,1,2,3,4) ,default: 2, 
+#0,表示只检测最外层轮廓， 其他，检测所有轮廓，每种层次关系不一样。
+match_metho=2
+#shape minimal pixels, default: 16
+reserver5=0
+#max iteration(>0), default: 100
+corner_thres=100
+#gray threshold(0~255) , default: 80
+diffVal=80
+#iteration different stop theshold(>.0）,default 0.01, when sub_metho = 2, co_thres = -1(use internal defult)
+co_thres=0.01
+#display level
+#disp_level=3281073
+##############################
+##############################
+#algorithm type
+algType=MV_ALG_DEFECTSDET2
+#smooth image
+useSmooth=0
+#object filter, default: 0
+use_filter=0
+#edge detect metho, default: 80
+#边缘敏感系数
+edge_thres=80
+#detected object pixels, default: 16
+min_pixels=0
+#mean-area
+min_area=3
+#contour metho(0,1,2,3,4) ,default: 2, 
+#0,表示只检测最外层轮廓， 其他，检测所有轮廓，每种层次关系不一样。
+match_metho=2
+#shape minimal pixels, default: 16
+reserver5=0
+#gray threshold(0~255) , default: 80
+diffVal=80
+#display level
+#disp_level=3281073
+##############################
+#algorithm type
+algType=MV_ALG_MOVING_DETECTION
+#edge detect metho, default: 80
+edge_thres=80
+#shape detect metho(0,1,2,3,4) ,default: 0
+match_metho=2
+#shape minimal pixels, default: 16
+reserver5=0
+#erode,dilate, iteration value(>1), default: 3
+corner_thres=7
+#differrence threshold(0~255) , default: 80
+diff_val=10
+#moving update rate(0.001~1), default:0.5
+co_thres=0.8
+#isMoving threshold,   if (pixels_pc > ppa) isMoving = 1, else isMoving = 0
+ppa=0.01
+#display level
+#disp_level=3281073
+##############################
+#algorithm type
+algType=MV_ALG_FACE_DET
+#设置人脸识别数，当进行人脸识别认证的时候：max_det_face=1
+#0 < max_rec_face < 32(FACE_LIMITED_REC)
+max_rec_face=1
+#设置一张画面中人脸检测数目
+max_det_face=10
+#最小人脸尺寸检测设置：图象分辨/face_scale， 默认：16
+face_scale=8
+#下面参数默认，或者保留以后用
+APP-ID=default
+DET-KEY=default
+REC-KEY=default
+UNK-KEY=default
+##############################
+#algorithm type
+algType=MV_ALG_ZMCLOTH_DET_CAFFE_FCN
+#edge detect metho, default: 80
+edge_thres=130
+#display level
+disp_level=43
+****************************************************
+***********************************************
+******************************************
+*************************************
+*********************************
+*****************************
+*************************
+*********************
+*****************
+*****Last Line******
