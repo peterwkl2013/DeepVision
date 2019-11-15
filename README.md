@@ -50,6 +50,7 @@ pmsNet网络分割应用一:
 
 ./testDL_SegNet_dj_x64.exe
 
+(下载模型: models/segNet_3 放置于imvcfg/下)
 ![image](./pic/dianjiao.png)
 
 
@@ -57,5 +58,6 @@ pmsNet网络分割应用二:
 
 ./testDL_SegNet_road_x64.exe
 
+(下载模型: models/segNet_0 放置于imvcfg/下)
 ![image](./pic/road.png)
 
