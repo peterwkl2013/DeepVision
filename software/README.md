@@ -28,5 +28,21 @@ IQA视觉软件是基于X-Vision AI视觉技术研发的一款视觉测量应用
 ![image](/pic/IQA_SYSTEM2.png)
 
 
+
+视频录像：
+
+2D尺寸测量的基本流程:
+（采集图片（文件或者工业相机）-->建立模板（模板训练、坐标系） --> 测量项 --> 运行检测）
+https://pan.baidu.com/s/10U4KSXcNYrKgnbh2UoysnQ
+
+模板定位的基本流程：
+
+（采集图片（文件或者工业相机）-->建立模板（模板训练）--> 运行检测）
+https://pan.baidu.com/s/1SDKgRvcQfsAYyInQWVtGvQ
+
+
+
+
+
 专业 && 高效 && 稳定&& 可靠的AI视觉解决方案支持
 (算法、软件、项目、产品设备开发）： 请联系QQ_514704465
