@@ -69,3 +69,9 @@ pmsNet网络分割应用二:
 (下载模型: models/segNet_0 放置于imvcfg/下)
 ![image](./pic/road.png)
 
+
+使用硬件加密狗开发，功能更强！
+
+![image](./pic/dog.png)
+
+
