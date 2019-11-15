@@ -72,6 +72,6 @@ pmsNet网络分割应用二:
 
 使用硬件加密狗开发，功能更强！
 
-![image](./pic/dog.png)
+![image](./pic/dog.jpg)
 
 
