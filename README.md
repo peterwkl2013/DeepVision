@@ -21,8 +21,32 @@ pmsNet和pmsFCN神经网络外观检测
 ![image](./pic/XVISION.png)
 
 
+应用案例:
+cd bin/
+
+模板匹配定位:
+
+./testSerialization_x64.exe
+
+![image](./pic/decode.png)
+
+条码/二维码识别：
+
+./testCodeRecog.exe
+
+![image](./pic/dingwei.png)
+
+pmsNet网络分割应用一:
+
+./testDL_SegNet_x64.exe
+
+![image](./pic/dianjiao.png)
+
 
 
 专业 && 高效 && 稳定&& 可靠的AI视觉解决方案支持
 (算法、软件、项目、产品设备开发）： 
 请联系QQ_514704465
+
+
+&欢迎加入开发团队QQ群：142669208&
