@@ -54,7 +54,7 @@ https://pan.baidu.com/s/10U4KSXcNYrKgnbh2UoysnQ
 
 模板定位的基本流程：
 
-（采集图片（文件或者工业相机）-->建立模板（模板训练）--> 运行检测）
+（采集图片文件或者工业相机）-->建立模板（模板训练）--> 运行检测）
 
 https://pan.baidu.com/s/1SDKgRvcQfsAYyInQWVtGvQ
 
