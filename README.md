@@ -71,6 +71,7 @@ X-VISION pmsNet网络分割应用二:
 
 
 X-VISION pmsNet行人检测应用三:
+
 (下载模型: models/segNet_5 放置于imvcfg/下)
 ![image](./pic/people.png)
 ==============================================
