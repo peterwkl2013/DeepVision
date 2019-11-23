@@ -54,7 +54,7 @@ cd bin/
 
 ![image](./pic/decode.png)
 
-pmsNet网络分割应用一:
+X-VISION pmsNet网络分割应用一:
 
 ./testDL_SegNet_dj_x64.exe
 
@@ -62,7 +62,7 @@ pmsNet网络分割应用一:
 ![image](./pic/dianjiao.png)
 
 
-pmsNet网络分割应用二:
+X-VISION pmsNet网络分割应用二:
 
 ./testDL_SegNet_road_x64.exe
 
@@ -70,8 +70,13 @@ pmsNet网络分割应用二:
 ![image](./pic/road.png)
 
 
-
+X-VISION pmsNet行人检测应用三:
+(下载模型: models/segNet_5 放置于imvcfg/下)
+![image](./pic/people.png)
 ==============================================
+
+
+
 
 使用硬件加密狗开发，加速项目应用、功能更强！
 
