@@ -25,7 +25,7 @@ IQA视觉软件是基于X-Vision AI视觉技术研发的一款视觉测量应用
 
 ![image](./pic/IQA_SYSTEM.png)
 
-![image](./pic/IQA2_SYSTEM.png)
+![image](./pic/IQA_SYSTEM2.png)
 
 
 专业 && 高效 && 稳定&& 可靠的AI视觉解决方案支持
