@@ -23,7 +23,7 @@ pmsNet和pmsFCN神经网络外观检测
 
 
 
-![image](/pic/XVISION.png)
+![image](./pic/XVISION.png)
 
 ==============================================
 
@@ -46,20 +46,20 @@ cd bin/
 
 ./testSerialization_x64.exe
 
-![image](/pic/dingwei.png)
+![image](./pic/dingwei.png)
 
 条码/二维码识别：
 
 ./testCodeRecog.exe
 
-![image](/pic/decode.png)
+![image](./pic/decode.png)
 
 X-VISION pmsNet网络分割应用一:
 
 ./testDL_SegNet_dj_x64.exe
 
 (下载模型: models/segNet_3 放置于imvcfg/下)
-![image](/pic/dianjiao.png)
+![image](./pic/dianjiao.png)
 
 
 X-VISION pmsNet网络分割应用二:
@@ -76,7 +76,7 @@ X-VISION pmsNet行人检测应用三:
 
 (下载模型: models/segNet_5 放置于imvcfg/下)
 
-![image](/pic/people.png)
+![image](./pic/people.png)
 ==============================================
 
 
@@ -84,6 +84,6 @@ X-VISION pmsNet行人检测应用三:
 
 使用硬件加密狗开发，加速项目应用、功能更强！
 
-![image](/pic/dog.jpg)
+![image](./pic/dog.jpg)
 
 
