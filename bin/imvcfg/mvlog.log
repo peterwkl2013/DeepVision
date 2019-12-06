@@ -522,3 +522,11 @@ xVision::alg instance init ok.
 2019-11-14 10:04:32 X-Vision::alg instance init ok.
 2019-11-14 10:09:23 X-Vision::load USB DLL error!
 2019-11-14 10:09:23 X-Vision::can't load dog dll!
+2019-12-05 15:55:25 X-Vision::begin to load MV config file...
+2019-12-05 15:55:25 X-Vision::load MV config file ok.
+2019-12-05 15:55:25 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-12-05 15:55:25 X-Vision::alg instance init ok.
+2019-12-06 16:51:43 X-Vision::begin to load MV config file...
+2019-12-06 16:51:43 X-Vision::load MV config file ok.
+2019-12-06 16:51:43 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-12-06 16:51:44 X-Vision::alg instance init ok.
