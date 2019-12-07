@@ -40,7 +40,7 @@ pmsNet和pmsFCN神经网络外观检测
 
 1. 只使包含使用sdklib/include
 
-2. 在bin/中可以找到相应DLL
+2. 在bin/中可以找到相应DLL以及将imcfg配置文件置于相同目录下
 
 3. demos/下学习应用例子
 
