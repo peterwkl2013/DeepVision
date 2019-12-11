@@ -64,3 +64,8 @@ https://pan.baidu.com/s/1SDKgRvcQfsAYyInQWVtGvQ
 专业 && 高效 && 稳定&& 可靠的AI视觉解决方案支持
 
 (算法、软件、项目、产品设备开发）： 请联系QQ_514704465
+
+
+软件演示版baidu云下载地址:
+
+https://pan.baidu.com/s/1RW3KWSfihCckVr2Ug9qoeg
