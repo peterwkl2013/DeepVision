@@ -116,6 +116,7 @@ public:
 		num_detect = 1;
 		config_path = "d:/imvcfg/";
 		overlap_thres = 0.7;
+		score_thres = 85;
 		train_flg = 0;
 	}
 	mv2DTemplateMatch(vector<float>_scale,
@@ -250,6 +251,7 @@ public:
 	int rotation_flag;              /* check template is rotation flag */
 	Point2f rotation_center;        /* template rotaion center */
 	float overlap_thres;            /* multi-object with the same class id remove threshold,  rect overap */
+	float score_thres;              /* score threshold */
 private:
 	int test;
 };
@@ -813,8 +815,30 @@ private:
 	unsigned long errors;
 };
 
-extern void mvResultStreamOutput(vector<matchResult>& res, String& pdata, int& lenght);
+/*
+@res,    input, matchResult
+@pdata,  output, string or binary data
+@length, output, length size
+@mode,   input, binary:mode = 0, binary: mode = 1
+*/
+extern void mvResultStreamOutput(vector<matchResult>& re, String& pdata, int& length, int mode = 0);
 static std::stringstream mvstream;
+
+
+#include <crtdbg.h>  
+
+
+#ifdef _DEBUG  
+#define new new(_NORMAL_BLOCK, __FILE__, __LINE__)  
+#endif  
+
+static void EnableMemLeakCheck()
+{
+	int tmpFlag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
+	tmpFlag |= _CRTDBG_LEAK_CHECK_DF;
+	_CrtSetDbgFlag(tmpFlag);
+}
+
 
 int main(int argc, char * argv[])
 {
@@ -1026,12 +1050,20 @@ int main(int argc, char * argv[])
 			//imshow("ccc", det);
 			//waitKey();
 
+			
+			//_CrtSetBreakAlloc(这里有第一遍注释掉, 第二遍再执行);  
 			my_templ.matchTemplate(det, class_ids, mres, conf);
+#if 1
 			String pdata = "hello xvision\n";
 			int lenght;
 			static mvSerialPort mycom;
 
-			mvResultStreamOutput(mres, pdata, lenght);
+			static int mode = 1;
+			std::stringstream mvstream;
+
+			mvstream.str("");  //clear()
+			/* 结果序列化：将mres结果转成序列化流 */
+			mvResultStreamOutput(mres, pdata, lenght, mode);
 
 			/* 以太网传输*/
 			int ret = mvServerSendMsg((char*)pdata.data(), lenght);
@@ -1174,7 +1206,7 @@ int main(int argc, char * argv[])
 					cv::String txt;
 					char str[512];
 
-					sprintf(str, "class_id:%s, score = %.2f, angle = %.1f(%.1f)", obj.class_id.c_str(), obj.score, my_templ.reffine_angle,
+					sprintf(str, "class_id:%s, score = %.2f, angle = %.1f(%.1f)", obj.class_id.c_str(), obj.score, my_templ.refine_angle,
 						obj.angle);
 					Point temp_offset;
 					if (obj.class_id == "id1")
@@ -1191,8 +1223,9 @@ int main(int argc, char * argv[])
 
 			}
 			cv::imshow("result", dst_copy);
+#endif
 			cv::waitKey(2);
-			if (kk + 5 > 357)
+			if (kk + 5 > 352)
 				kk = 0;
 		}
 	}

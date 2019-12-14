@@ -109,6 +109,7 @@ public:
 		num_detect = 1;
 		config_path = "d:/imvcfg/";
 		overlap_thres = 0.7;
+		score_thres = 85;
 		train_flg = 0;
 	}
 	mv2DTemplateMatch(vector<float>_scale,
@@ -243,6 +244,7 @@ public:
 	int rotation_flag;              /* check template is rotation flag */
 	Point2f rotation_center;        /* template rotaion center */
 	float overlap_thres;            /* multi-object with the same class id remove threshold,  rect overap */
+	float score_thres;              /* score threshold */
 private:
 	int test;
 };
