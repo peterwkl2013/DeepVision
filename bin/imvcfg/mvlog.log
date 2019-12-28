@@ -530,3 +530,7 @@ xVision::alg instance init ok.
 2019-12-06 16:51:43 X-Vision::load MV config file ok.
 2019-12-06 16:51:43 X-Vision::load template image error.[./imvcfg/templ.bmp]
 2019-12-06 16:51:44 X-Vision::alg instance init ok.
+2019-12-28 09:04:29 X-Vision::begin to load MV config file...
+2019-12-28 09:04:29 X-Vision::load MV config file ok.
+2019-12-28 09:04:29 X-Vision::load template image error.[./imvcfg/templ.bmp]
+2019-12-28 09:04:29 X-Vision::alg instance init ok.
