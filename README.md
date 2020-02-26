@@ -94,4 +94,4 @@ X-VISION pmsNet行人检测应用三:
 
 基于DeepVision SDK的车牌识别：
 
-![image](./pic/palte.gif)
+![image](./pic/plate.gif)
