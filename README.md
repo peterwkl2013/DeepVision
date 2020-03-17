@@ -1,4 +1,4 @@
-DeepVision是自主研发的新一代AI视觉解决方案SDK,采用先进的机器视觉和AI神经网络等核心技术,能够有效解决传统机器视觉系统过于复杂、精度低、检测不可靠等问题，使得视觉自动化设备更加简单、稳定、智能、加速研发项目落地。
+﻿DeepVision是自主研发的新一代AI视觉解决方案SDK,采用先进的机器视觉和AI神经网络等核心技术,能够有效解决传统机器视觉系统过于复杂、精度低、检测不可靠等问题，使得视觉自动化设备更加简单、稳定、智能、加速研发项目落地。
 
 DeepVision具有以下功能:
 
@@ -53,13 +53,13 @@ cd bin/
 
 ./testSerialization_x64.exe
 
-![image](./pic/dingwei.png)
+![image](./pic/location.gif)
 
 条码/二维码识别：
 
 ./testCodeRecog.exe
 
-![image](./pic/decode.png)
+![image](./pic/code.gif)
 
 X-VISION pmsNet网络分割应用一:
 
