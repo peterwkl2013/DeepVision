@@ -69,7 +69,7 @@ public:
 	@input, width   the detection roi image area
 	@input, height  the detection roi image area
 	*/
-	void setDetRoi(vector<Point>& ppts, int width, int height, int is_show = 0);
+	void setDetRoi(vector<vector<Point>>& ppnts, int width, int height, int is_show);
 public:
 	String models_path;              /* model file to read from */
 	int in_width;                    /* image input width: default,512 */
@@ -103,7 +103,7 @@ static void drawPred(Mat& frame, yobjectResult& obj)
 		rectangle(frame, rc, Scalar(127, 127, 127));
 
 	//Get the label for the class name and its confidence
-	string label = format("%d:%.2f", classId, conf);
+	string label = format("%d", classId);
 	//string label = format("%d", classId);
 	//Display the label at the top of the bounding box
 	int baseLine;
@@ -114,7 +114,52 @@ static void drawPred(Mat& frame, yobjectResult& obj)
 }
 
 
+void setDetRoi(vector<vector<Point>>& ppts, int width, int height, int is_show)
+{
+	//CV_EXPORTS_W void polylines(InputOutputArray img, InputArrayOfArrays pts,
+	//	bool isClosed, const Scalar& color,
+	//	int thickness = 1, int lineType = LINE_8, int shift = 0);
+	Mat img(height, width, CV_8UC1, Scalar(0));
 
+	vector <Point> tmp;
+
+	for (int i = 0; i < ppts.size(); i++)
+	{
+		tmp = ppts[i];
+
+
+		//const Point *ps = &ppts[0];
+		////ps[0][0] = ppts[0];
+		////ps[0][1] = ppts[1];
+		////ps[0][2] = ppts[2];
+		////ps[0][3] = ppts[3];
+		////ps[0][4] = ppts[4];
+		//const Point *ppt[1] = { &ps[0] };
+		//int npt[] = { ppts.size() };
+
+		const int hull_count = (int)tmp.size();
+		const cv::Point* hull_pts = &tmp[0];
+
+
+		cv::fillPoly(img, &hull_pts, &hull_count, 1, Scalar(i+1));
+
+
+		cv::polylines(img, tmp, 1, Scalar(255), 1, 8, 0);
+		if (is_show)
+			cv::imshow("poly", img);
+
+		if (is_show)
+		{
+			Mat cc;
+			cv::threshold(img, cc, 0, 255, THRESH_BINARY);
+			cv::imshow("poly-roi", cc);
+		}
+
+		waitKey();
+	}
+
+	return;
+}
 int main()
 {
 	//mvYoloDetection test_yolo("../../models/test_yolov3_wenli.pb");
@@ -138,6 +183,8 @@ int main()
 		imshow("input", img);
 		vector<Point> ppnts;
 
+		vector<vector<Point>> pls;
+
 		Point p1;
 		int c1 = img.cols / 2;
 		int c2 = img.rows / 2;
@@ -150,6 +197,23 @@ int main()
 		ppnts.push_back(p1);
 		p1 = Point(c1 - 100, c2 + 100);
 		ppnts.push_back(p1);
+
+		pls.push_back(ppnts);
+
+		ppnts.clear();
+		c1 = 20, c2 = 80;
+
+		p1 = Point(c1 - 20, c2 - 20);
+		ppnts.push_back(p1);
+		p1 = Point(c1 + 20, c2 - 20);
+		ppnts.push_back(p1);
+		p1 = Point(c1 + 20, c2 + 20);
+		ppnts.push_back(p1);
+		p1 = Point(c1 - 20, c2 + 20);
+		ppnts.push_back(p1);
+		pls.push_back(ppnts);
+		//setDetRoi(pls, img.cols, img.rows, 1);
+
 		//p1 = Point(320, 180);
 		//ppnts.push_back(p1);
 		//p1 = Point(235, 465);
@@ -160,7 +224,7 @@ int main()
 		int64 nTick, nTick2;
 		nTick = getTickCount();
 		
-		test_yolo.setDetRoi(ppnts, img.cols, img.rows, 1);
+		test_yolo.setDetRoi(pls, img.cols, img.rows, 1);
 		test_yolo.process(img, mres);
 
 		nTick2 = getTickCount();

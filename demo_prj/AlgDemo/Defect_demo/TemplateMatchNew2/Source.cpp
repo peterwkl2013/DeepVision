@@ -90,6 +90,7 @@ typedef struct
     Rect  rect;         /* rectangle location */
     mvFBox bbox;        /* box olcation */
     int x_offset, y_offset;
+	int roi_index;       /* roi index */
 	int valid;          /* roi valid */
 }matchResult;
 
@@ -156,7 +157,7 @@ public:
 	@input, width   the detection roi image area
 	@input, height  the detection roi image area
 	*/
-	void setDetRoi(vector<Point>& ppts, int width, int height, int is_show = 0);
+	void setDetRoi(vector<vector<Point>>& ppnts, int width, int height, int is_show);
     /*
     @output, the hmat, get the template affine transform matrix.
     */
@@ -212,7 +213,7 @@ public:
     int   num_features;              /* feature to extract in the template */
     float min_thres;                 /* to control the feature response */
     float max_thres;                 /* to control the feature response */
-    float angle_step;              /* angle step when train template */
+    float angle_step;                /* angle step when train template */
                                      /* when the template size(width, height) is too large  , it is necessary
                                      to set the filter size: 3, 5, 7, 9,11, to filter the features, else set to 0 , when have enough features */
     int   filter_size;
@@ -276,6 +277,16 @@ int main(int argc, char * argv[])
     int ret;
     mv2DTemplateMatch  my_templ;
     vector<matchResult>mres;
+
+	int cc;
+
+	ret = 0;
+
+	cc = !ret;
+
+	ret = 1;
+	cc = !ret;
+
 
 #if 1
 
@@ -428,7 +439,7 @@ int main(int argc, char * argv[])
 
     for (size_t ii = 0; ii < img_dets.size(); ii++)
     {
-
+		double phmat[9];
 
         Mat det_img = img_dets[ii];
 
@@ -475,6 +486,8 @@ int main(int argc, char * argv[])
                 det = img_dets[ii].clone();
                 circle(det, Point(200, 400), 10, Scalar(0, 0, 0), -1);
                 cv::warpAffine(det_img, det, img_roate, det_img.size());
+
+
             }
 
             //imshow("ccc", det);
@@ -497,7 +510,31 @@ int main(int argc, char * argv[])
 			ppnts.push_back(p1);
 			p1 = Point(c1 - 120, c2 + 120);
 			ppnts.push_back(p1);
-			my_templ.setDetRoi(ppnts, det.cols, det.rows, 0);
+
+			vector<vector <Point>> pls;
+			pls.push_back(ppnts);
+
+			c1 += 120, c2 += 120;
+			ppnts.clear();
+			p1 = Point(c1 - 80, c2 - 80);
+			ppnts.push_back(p1);
+			p1 = Point(c1 + 80, c2 - 80);
+			ppnts.push_back(p1);
+			p1 = Point(c1 + 80, c2 + 80);
+			ppnts.push_back(p1);
+			p1 = Point(c1 - 80, c2 + 80);
+			ppnts.push_back(p1);
+			pls.push_back(ppnts);
+			my_templ.setDetRoi(pls, det.cols, det.rows, 0);
+			Mat cc;
+			//cv::threshold(my_templ.roi_map, cc, 1, 255, THRESH_BINARY);
+			//cv::imshow("poly-roi", cc);
+
+			//cv::threshold(my_templ.roi_map, cc, 2, 255, THRESH_BINARY);
+			//cv::imshow("poly-roi2", cc);
+
+			//waitKey();
+
             my_templ.matchTemplate(det, class_ids, mres, conf);
 			nTick2 = getTickCount();
 			ptime = ((double)nTick2 - nTick)*1000. / getTickFrequency();
@@ -607,12 +644,11 @@ int main(int argc, char * argv[])
 					int next = (i + 1 == 4) ? 0 : (i + 1);
 					if (obj.valid)
 					{
-
 						cv::line(dst_copy, Point(obj.bbox.pnts[i].x, obj.bbox.pnts[i].y),
 							Point(obj.bbox.pnts[next].x, obj.bbox.pnts[next].y), Scalar(255, 0, 0), 2);
 						cv::line(my_templ.roi_map, Point(obj.bbox.pnts[i].x, obj.bbox.pnts[i].y),
 							Point(obj.bbox.pnts[next].x, obj.bbox.pnts[next].y), Scalar(60, 60, 60), 2);
-						circle(my_templ.roi_map, Point(obj.r_center.x, obj.r_center.y), 5, Scalar(60, 60, 60), -1);
+						circle(my_templ.roi_map, Point(obj.r_center.x, obj.r_center.y), 5, Scalar(60*obj.roi_index, 60*obj.roi_index, 60*obj.roi_index), -1);
 					}
 					else
 					{
