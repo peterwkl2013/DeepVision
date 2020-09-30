@@ -19,9 +19,9 @@ WSN@2014/09/14                                                       *
 #include "mvSDK_interface.h"
 
 #ifndef MV_RELEASE
-#pragma comment(lib,"LibX-Vision_x64.lib")
+#pragma comment(lib,"LibDeepVision_x64.lib")
 #else
-#pragma comment(lib,"LibX-Vision_x64.lib")
+#pragma comment(lib,"LibDeepVision_x64.lib")
 #endif
 
 using namespace std;
