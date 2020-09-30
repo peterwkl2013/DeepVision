@@ -80,138 +80,101 @@ typedef struct
 	int valid;          /* roi valid */
 }matchResult;
 
-class mv2DTemplateMatch
+class  mv2DTemplateMatch
 {
 public:
-	mv2DTemplateMatch()
-	{
-		scale_ranges.push_back(1.0);
-		angle_ranges.push_back(0.0); angle_ranges.push_back(360);
-		sel_mode = 0;  /* use conner detect metho */
-		num_features = 128; min_thres = 50; max_thres = 90;
-		angle_step = 1;  filter_size = 5; /* */
-		num_detect = 1;
-		config_path = "../../imvcfg/";
-		overlap_thres = 0.7;
-	}
-
+	mv2DTemplateMatch();
 	~mv2DTemplateMatch();
-	/*
-	@input, temps  ,color-image
-	@input, class_ids class name
-	@input, template offset int the template iamge
-	*/
-	int trainTemplate(vector<Mat>& temps, vector<String>& class_ids, vector <Point2f> offset);
 
 	/*
-	@input,  ids, class name
-	@input,  template index
-	@output, tf, output the template features
+	@input, temps, in the tempalte image
+	@input, class_ids class name, if empty, default id will be matched
+	@input, polygon point in the image
 	*/
-	void getTemplateFeatures(String ids, int index, vector<mvTemplate>&tf);
-
+	int trainTemplate(Mat& templ, String& class_id, Rect& roi, Mat& mask = Mat());
+	int trainTemplate(Mat& templ, String& class_id, vector<vector<Point2f>>& loc_regions, Mat& mask = Mat());
 	/*
-	@input, img, color image
-	@input, ids, class name
-	@input, offset, in the image
-	@input, color
+	@input, template image
+	@input, class_ids class name, if empty, default id will be matched
+	@input, roi int the template image
 	*/
-	void drawTemplateFeatures(Mat& img, vector<mvTemplate>& tf, Point offset, Scalar color);
-
-	/*
-	@input, class ids
-	@input, template features
-	@output, features position points
-	*/
-	void getTemplateFeaturesPos(String ids, mvTemplate& tf, vector <Point2f>& outpoints);
-
-	/*
-	@input, img, color image
-	@input, ids, class name
-	@input, color
-	*/
-	void drawTemplateFeatures(Mat& img, String ids, Scalar color);
+	int trainTemplate(vector<Mat>& templs, vector<String>& class_ids, vector<Rect>& roi_rect, vector<Mat>& mask = vector<Mat>());
+	int trainTemplateFast(vector<Mat>& templs, vector<String>& class_ids, vector<Rect>& roi_rect, vector<Mat>& mask = vector<Mat>());
 
 	/*
 	@input, det_img  detection image,color-image
-	@input, class_ids class name
+	@input, class_ids class name, if empty, default id will be matched
 	@input, conf  score confidence (0~100)
 	@output, mres, match result
-	@reutrn true or error code: (unvalid:-1), (no template: -2)
+	@reutrn true or false or -1 invalid
 	*/
-	int matchTemplate(Mat& det_img, vector<cv::String>& class_ids, vector<matchResult>& mres, float score = 0.85);
+	int matchTemplate(Mat& det_img, vector<cv::String>& class_ids, vector<matchResult>& mres, float score = 0.80);
+
+	/* two metho to refine location */
+	void refineObjectPos(Mat& temp, Mat& det, matchResult& mres);
+	void refineObjectPos(Mat& det, vector<matchResult>& v_mres);
+
+	/*input, ranges,  +- ranges  (0~360.0 degree)
+	  eg.  +-45 ( 0~45, 360 ~ 315)
+	*/
+	void setLimitAngleRanges(float ranges = 45.0) { angle_ranges = ranges; }
 
 	/*
-	if the detection object's location is out of the roi map, will be ignored
-	@input ppts     polygon points
-	@input, width   the detection roi image area
-	@input, height  the detection roi image area
+	detection roi map(the same size of the 'det_img' image)
+	@input, width
+	@input, height
 	*/
-	void setDetRoi(vector<vector<Point>>& ppnts, int width, int height, int is_show=0);
+	void setDetRoiMap(vector<vector<Point>>& plys, int width, int height, int is_show = 0);
+	void setDetRoiMap(Mat& map) { roi_map = map; }
+	Mat  getDetRoiMap() { return roi_map; }
+	Mat  createDetRoiMap(vector<vector<Point>>& plys, vector<int>& type, int width, int height, int is_show = 0);
 
 	/*
-	@output, the hmat, get the template affine transform matrix.
+	@output, the hmat, get the template affine transform matrix: 2x3.
 	*/
 	void getAFTransform(matchResult& mres, double* hmat);
-
-	void refineObjectPos(Mat& temp, Mat& det, matchResult& mres, vector<Point2f>& mask_points, double* hmat);
 	/*
-	@temp,   input, template image,  gray image
-	@dst,    input, detect image, gray image
-	@objs    input, detect object position
-	@angle_range, input, angle range(+/-), default: 5
-	@angle_step,  input, angle step,  default: 0.2
-	@r_center,    input, roation center offset range ,   default: 32
-	@filt_size, the filter size within the windows size,  default: -1 (not use), 3, 5, 7,9...
-	*/
-	void refineRoughPosition(Mat& temp, Mat& dst, vector<Point2f> mask_points, int angle_range = 3, float angle_step = 0.2,
-		int r_center = 32, int filt_size = -1);
-	/*
-	@tempp, input, template image points.
-	@dstpp, input, detect image points, the size as the template.
-	@type,  type = 0, the affine matrix: 2x3,  else the homnography matrix 3x3
-	@matrix3x3, ouput, the affine matrix2x3 in [hmat]
-	*/
-	void refinePosition(vector<Point2f>&tempp, vector<Point2f>& dstpp, int type = 0);
-
-	/*
-	@tempp, input, template image points.
-	@dstpp, input, detect image points, the size as the template.
-	@max_lit,  ilteration, default: 50
-	@thres,  ilteration threshold, default; 0.001
-	@use_filter  set 1, to use the filter to improve the point matched accurrcy.
-	*/
-	void refinePositionICP(vector<Point2f>&tempp, vector<Point2f>& dstpp, int max_it = 50, float thres = 0.002, int use_filter = 0);
-
-	/*
-	@tempp, input, template points in the template image.
+	@tempp, input,  template points in the template image.
 	@dstpp, output, output points in the detection image.
 	*/
-	void calcPointPosition(vector<Point2f>& tempp, vector<Point2f>& dstpp);
+	void calcPointPosition(vector<Point>& tempp, vector<Point>& dstpp, double* phmat);
+	void calcPointPosition(vector<Point>& tempp, vector<Point2f>& dstpp, double* phmat);
+	void calcPointPosition(vector<Point2f>& tempp, vector<Point2f>& dstpp, double* phmat);
 
-	std::map<String, std::vector<vector<mvTemplate>>> template_features;
-	TemplateExtraParamMap class_param;
+	/*
+	when change a new class id, need to reset
+	*/
+	void reset();
+
+	/* object tracking functions */
+	void enableObjectTracking(int bhv) { tracking = bhv; }
+	void initObjectTracker(int numtrack = 10, int start_frame = 5, int tr_len = 20, int track_del = 10, float thres = 0.6);
+	void setTrakingObjectData(vector<matchResult>& mres);
 
 public:
 	String config_path;              /* template feature to store or to read from */
 	Mat det_img;                     /* detect image (input) */
 	Mat temp_img;                    /* template image (input) */
 	Mat roi_map;                     /* detection roi map (gray image) */
-	int sel_mode;                    /* select feature mode 1: random, 0: conner */
+	int sel_mode;                    /* select feature mode: 0-corners, 1-select edge, 2-select edge,no limited featres */
 	int num_detect;                  /* num object to detect in one image */
 	vector<float> scale_ranges;      /* scale factor(0.8~1.5) for training,  now only support scale = 1.0 */
-	vector<float> angle_ranges;      /* rotation angle (0~360) for training,  default(0,360) */
+	float angle_ranges;              /* min-max angles rangles, according to 0.0 */
+	float angle_step;                /* angle step when train template */
 	int   num_features;              /* feature to extract in the template */
 	float min_thres;                 /* to control the feature response */
 	float max_thres;                 /* to control the feature response */
-	float angle_step;                /* angle step when train template */
-									 /* when the template size(width, height) is too large  , it is necessary
-									 to set the filter size: 3, 5, 7, 9,11, to filter the features, else set to 0 , when have enough features */
+	int   pos_refine;                /* set true if refine object position, also can use 'refineObjectPos' manually */
+	int   tracking;                  /* set true if tracking the detect-object */
+	int   num_track;                 /* num object to tracking */
+	int   tracking_start_frame;      /* start tracking after num frames */
+	int   track_length;              /* tracking length */
+	int   track_del;                 /* tracking lenght to del */
+	float track_thres;               /* tracking match score */
+
+	/* when the template size(width, height) is too large  , it is necessary
+	to set the filter size: 3, 5, 7, 9,11, to filter the features, else set to 0 , when have enough features */
 	int   filter_size;
-	double hmat[16];                /* output, current transformation matrix for : 2x3, 3x3, 4x4 */
-	float reffine_angle;            /* output, the reffined angle of current transform */
-	int rotation_flag;              /* check template is rotation flag */
-	Point2f rotation_center;        /* template rotaion center */
 	float overlap_thres;            /* multi-object with the same class id remove threshold,  rect overap */
 private:
 	int test;
@@ -219,7 +182,7 @@ private:
 	mympl* mpl;
 };
 
-#pragma comment(lib,"LibX-Vision_x64.lib")
+#pragma comment(lib,"LibDeepVision_x64.lib")
 
 const int ARROW_LENGHT = 120;
 const int TRIANGLE_HEIGHT = 25;

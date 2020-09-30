@@ -23,6 +23,8 @@ using namespace cv;
 
 typedef struct
 {
+	String id;                /* class id */
+	int shape;                /* shape type */
 	int index;                /* objext index */
 	int label;                /* label value */
 	int valid;                /* valid flag */
@@ -35,6 +37,7 @@ typedef struct
 	Rect bound_rect;          /* object rect */
 	RotatedRect box;          /* object box */
 	Point2f box_pnts[4];      /* object box bounding rect */
+	Vec4i hierarchy;          /* contours hierachy */
 	vector<Point> ppnts;      /* object points */
 	vector<Point> contours;   /* object contours */
 	int   reserved1;
@@ -42,6 +45,7 @@ typedef struct
 	float reserved3;
 	float reserved4;
 }mvCCLObject;
+
 
 #ifdef __cplusplus
 extern "C" {
