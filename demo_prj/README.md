@@ -21,4 +21,4 @@ opencv4.0  boost 1.8.0等
 总处理时间（粗定位和精定位):  15.213 ms@1024x758
 
 
-
+![image](./pic/loc2.png)
