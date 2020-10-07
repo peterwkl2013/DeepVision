@@ -9,7 +9,7 @@ opencv4.0  boost 1.8.0等
 
 
 
-增加最新templateMatchNew2例子:
+增加最新templateMatchNew2例子:  Location_Examples.cpp
 
 目标定位算法性能：
 
