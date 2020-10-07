@@ -540,7 +540,8 @@ int main(int argc, char * argv[])
 
 				dif = sqrt((float)(a + b));
 				anglediff = fabs(kk - obj.angle);
-
+				if (anglediff > 350.0)
+					anglediff = fabs(360 - obj.angle);
 
 				cc1.push_back(dif);
 				cc2.push_back(dif / sqrt(2.0));
